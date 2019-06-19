@@ -26,7 +26,7 @@ const vm = new Vue({
   },
   computed: {
     deadDate() {
-      return moment().format('dddd MMMM do');
+      return moment().format('dddd MMMM Do');
     }
   }
 });
