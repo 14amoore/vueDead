@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+  </head>
+  <body>
+    <div id="steal">
+      <img src="./assets/stealy.png" />
+      <p>
+        Choose a Date to know where you'll see the Dead.
+      </p>
+      <p>
+        <select v-model="tourStops">
+          <option v-for="option in stops" v-bind:value="option.venue">
+            {{ option.date }}
+          </option>
+        </select>
+      </p>
+      <p>
+        <span>You're going to see the Dead at {{ tourStops }}! </span>
+      </p>
+      <p>Today is {{ deadDate }}.</p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
