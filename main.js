@@ -11,17 +11,6 @@ const vm = new Vue({
       { date: 'July 2nd', venue: 'Dos Equis Pavilion' },
       { date: 'July 5th', venue: 'Folsom Field' },
       { date: 'July 6th', venue: 'Folsom Field' }
-    ],
-    showStart: '',
-    days: [
-      { calendar: 'June 20th', weekDay: 'Thursday' },
-      { calendar: 'June 22nd', weekDay: 'Saturday' },
-      { calendar: 'June 23rd', weekDay: 'Sunday' },
-      { calendar: 'June 26th', weekDay: 'Wednesday' },
-      { calendar: 'June 29th', weekDay: 'Saturday' },
-      { calendar: 'July 2nd', weekDay: 'Tuesday' },
-      { calendar: 'July 5th', weekDay: 'Friday' },
-      { calendar: 'July 6th', weekDay: 'Saturday' }
     ]
   },
   computed: {
